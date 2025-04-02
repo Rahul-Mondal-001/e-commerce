@@ -1,0 +1,242 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d0dae9;
+}
+/* Navbar Custom Styles */
+.navbar {
+    padding: 10px 20px;
+    box-shadow: 0px 2px 5px rgba(3, 33, 84, 0.1);
+    background-color: #c3d1ee;
+    width: 100%;
+    height:90px;
+    border-radius: 80px;
+}
+
+.navbar .container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.navbar-nav .nav-link {
+    font-size: 20px;
+    font-weight: bold;
+    color: #110202 !important;
+    padding: 8px 15px;
+    transition: background-color 0.3s, color 0.3s;
+    gap: 50px;
+}
+
+.navbar-nav .nav-link:hover {
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+.navbar-nav .active {
+    background-color: #28a745 !important;
+    border-radius: 5px;
+}
+
+/* Product cards styling */
+.card {
+    box-shadow: 0 4px 8px rgba(108, 161, 234, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Product image */
+.card img {
+    height: 300px;
+    object-fit: cover;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #4CAF50;
+    border: none;
+    transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #45a049;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #1e2a38;
+    padding: 50px 20px;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+.footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 40px;
+}
+
+.footer h5 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #00aaff;
+    position: relative;
+}
+
+.footer h5::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 50px;
+    height: 2px;
+    background-color: #00aaff;
+}
+
+.footer .social-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.footer .social-icon {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    padding: 5px;
+    background-color: #ffffff;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.footer .social-icon:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px #00aaff;
+}
+
+.payment-option {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.payment-option img {
+    width: 45px;
+    height: 30px;
+    filter: grayscale(100%);
+    transition: filter 0.3s;
+}
+
+.payment-option img:hover {
+    filter: none;
+}
+
+.footer-menu {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-menu li {
+    margin-bottom: 12px;
+}
+
+.footer-menu a {
+    text-decoration: none;
+    color: #dcdcdc;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.footer-menu a:hover {
+    color: #00aaff;
+}
+
+.footer p {
+    font-size: 14px;
+    color: #dcdcdc;
+}
+
+.footer p span {
+    color: #00aaff;
+    font-weight: 600;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 15px;
+    border-top: 1px solid #444;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+/* Form styling */
+form input,
+form textarea {
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/* Admin page styling */
+.admin-container {
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 5px;
+}
+/*products style*/
+/* Product Page Styles */
+.product-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: #f8f9fa;
+}
+
+.product-image {
+    width: 100%;
+    height: auto;
+    max-height: 250px;
+    object-fit: cover;
+}
+
+.product-card h4 {
+    font-size: 20px;
+    margin: 15px 0 10px;
+}
+
+.product-card h5 {
+    font-size: 18px;
+    color: #28a745;
+}
+
+.product-card button {
+    margin-top: 10px;
+}
+
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .card img {
+        height: 200px;
+    }
+
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+}
